@@ -27,8 +27,30 @@ for chave in contatos:
 
 #.COPY
 
-#.FROMKEYS   >>cria chaves
+
+
+#.FROMKEYS   >>cria chaves  >> chaves= identificador para acessar um valor ex: "lala@gmail.com" :
 
 #.GET  >>acessar valores >> acessa chaves:
+
 contatos = {
-    "lala@gmail.com"}
+    "lala@gmail.com": {"nome": "Ana", "tel": "123456"} 
+}
+
+#print(contatos[chave]) #keyError
+print(contatos.get("chave")) #none
+print(contatos.get("chave", {})) #{}
+
+#.ITEMS  >>retorna uma lista de tuplas do dicionario
+
+#.POP >>remove a chave
+
+#.SETDEFAULT
+
+#.UPDATE
+
+#.VALUES
+
+#IN
+
+#DEL
