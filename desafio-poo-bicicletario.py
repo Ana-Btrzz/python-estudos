@@ -1,11 +1,11 @@
 class Bicicleta:
-    def __init__(self, cor, modelo, ano, valor):     #self ou this
+    def __init__(self, cor, modelo, ano, valor):  # self ou this
         self.cor = cor
         self.modelo = modelo
         self.ano = ano
         self.valor = valor
 
-    #Métodos:
+    # Métodos:
     def buzinar(self):
         print("plim plim")
 
@@ -16,13 +16,11 @@ class Bicicleta:
     def correr(self):
         print("Vruummm")
 
-
-
     def __str__(self):
         return f"bicicleta: cor={self.cor}, modelo={self.modelo}, ano={self.ano}, valor={self.valor}"
-    
 
-#criar a instancia para a classe:
+
+# criar a instancia para a classe:
 b1 = Bicicleta("vermelha", "caloi", 2022, 600)
 print(b1)
 

@@ -10,7 +10,7 @@ if tipo_carro == "p":
     data_estimada = data_atual + timedelta(minutes=tempo_pequeno)
     print(f"O carro chegou: {data_atual} e ficará pronto às: {data_estimada}")
 
-elif tipo_carro == "m" :
+elif tipo_carro == "m":
     data_estimada = data_atual + timedelta(minutes=tempo_medio)
     print(f"O carro chegou: {data_atual} e ficará pronto às: {data_estimada}")
 
@@ -20,20 +20,18 @@ else:
     print(f"O carro chegou: {data_atual} e ficará pronto às: {data_estimada}")
 
 
-
-
-#STRFTIME  >> FORMATAR E CONVERTER DATA PARA BR:
+# STRFTIME  >> FORMATAR E CONVERTER DATA PARA BR:
 
 d = datetime.now()
 
-print(d.strftime("%d/%m/%Y %H:%M")) #dia/mes/ano  hora:minutos
+print(d.strftime("%d/%m/%Y %H:%M"))  # dia/mes/ano  hora:minutos
 
-#CONVERTENDO STRING PARA DATETIME:
+# CONVERTENDO STRING PARA DATETIME:
 date_string = "20/07/2026 16:30"
 d = datetime.strptime(date_string, "%d/%m/%Y %H:%M")
 print(d)
 
-#PYTZ >> fusorario
+# PYTZ >> fusorario
 
 import pytz
 
